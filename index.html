@@ -4,32 +4,121 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>NotesVault</title>
   </head>
   <body>
-    <main>
-        <header>
-            <h1>NotesVault</h1>
+    
+         <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/">
+                    <img src="./images/logo.jpg" alt="NotesVault">
+                    NotesVault
+                </a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li class="has-dropdown">
+                    <a href="#">Pages <i class="fas fa-chevron-down nav-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                    <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Blog & FAQs</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Services <i class="fas fa-chevron-down nav-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                       <li><a href="notes">Notes</a></li>
+                            <li><a href="pyqs">PYQs</a></li>
+                            <li><a href="references">References</a></li>
+                            <li><a href="resources">Resources</a></li>
+                          
+                    </ul>
+                </li>
+<div class="menu-toggle" id="mobile-menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <script src="https://kit.fontawesome.com/YOUR_UNIQUE_CODE.js" crossorigin="anonymous"></script>
         </header>
-        <section aria-labelledby="project-description">
-            <p id="project-description" class="info-text">
-                NotesVault is a beginner-friendly open-source project hosted under the Open Source Society. Its purpose is to provide a collaborative platform for sharing academic notes, resources, and previous year questions (PYQs), making quality study material accessible to everyone.
-            </p>
-            <ul id="project-details" class="details-list">
-                <li class="detail-item"><strong>Project Type:</strong> Open Source</li>
-                <li class="detail-item"><strong>Focus:</strong> Academic notes, resources, and PYQs</li>
-                <li class="detail-item"><strong>Purpose:</strong> Promote open-source academic sharing and collaboration</li>
-                <li class="detail-item"><strong>GitHub:</strong> <a href="https://github.com/opensource-society/notesvault" target="_blank" rel="noopener noreferrer" class="github-link">github.com/opensource-society/notesvault</a></li>
-            </ul>
-            <nav aria-label="Project tags" id="project-tags" class="tags"></nav>
-                <span class="tag">#OpenSource</span>
-                <span class="tag">#BeginnerFriendly</span>
-                <span class="tag">#Academic</span>
-                <span class="tag">#Notes</span>
-                <span class="tag">#PYQs</span>
-                <span class="tag">#Resources</span>
-            </nav>
-        </section>
+        <main>
+            <section aria-labelledby="project-description">
+                <p id="project-description" class="info-text">
+                    NotesVault is a beginner-friendly open-source project hosted under the Open Source Society. Its purpose is to provide a collaborative platform for sharing academic notes, resources, and previous year questions (PYQs), making quality study material accessible to everyone.
+                </p>
+                
+
+<section class="about-section" id="about">
+  <div class="about-container">
+    <div class="about-content">
+      <h2>About Us</h2>
+      <p>
+        <strong>NotesVault</strong> is a collaborative platform aimed at providing accessible academic resources. We focus on sharing notes, previous year questions (PYQs), and other study materials to support learners everywhere.
+      </p>
+      <div class="about-features">
+        <div class="about-feature">
+          <i class="fa-solid fa-notes-medical"></i>
+          <span>Notes</span>
+        </div>
+        <div class="about-feature">
+          <i class="fa-solid fa-file-circle-question"></i>
+          <span>PYQs</span>
+        </div>
+        <div class="about-feature">
+          <i class="fa-solid fa-users"></i>
+          <span>Community Support</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="hero-section" id="hero-slider">
+        
+        <div class="hero-content-wrapper">
+            <div class="hero-text-content">
+                <h1>We Care About <br>Your Studies and Success</h1>
+                <p>Finding the right study materials and resources has never been easier. This intuitive platform lets you seamlessly search for notes, previous year questions (PYQs), and other academic resources, then access them with just a few clicks. Take control of your learning journey today!.</p>
+
+            </div>
+            <div class="hero-image-content">
+                <img src="./images/use.jpg" alt="background">
+            </div>
+        </div>
+    </section>
     </main>
-  </body>
-</html>
+    
+    <a href="#" class="back-to-top" id="backToTopBtn" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</a>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: admin@notesvault.com</li>
+                   </ul>
+            </div>
+            </div>
+
+        <div class="footer-base">
+            <p>Copyrights © 2025. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</main>
